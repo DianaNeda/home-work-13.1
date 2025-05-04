@@ -4,6 +4,10 @@ svg {
     display: block;
 }
 
+h1, h2 {
+    text-align: center;
+}
+
 .svg-rect path {
     fill: #3498db;
     stroke: #2c3e50;
