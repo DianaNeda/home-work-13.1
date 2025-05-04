@@ -1,0 +1,84 @@
+svg {
+    margin: auto;
+    overflow: visible;
+    display: block;
+}
+
+.svg-rect path {
+    fill: #3498db;
+    stroke: #2c3e50;
+    stroke-width: 3px;
+}
+.svg-rect:hover {
+    transform: scale(1.1);
+}
+.svg-rect:hover path {
+    fill: #2980b9;
+}
+
+
+.svg-monitor path {
+    fill: #2ecc71;
+    stroke: #27ae60;
+    stroke-width: 5px;
+}
+.svg-monitor:hover {
+    transform: rotate(2deg);
+}
+.svg-monitor:hover path {
+    fill: #1abc9c;
+}
+
+
+.svg-circle path {
+    fill: #f1c40f;
+    stroke: #f39c12;
+    stroke-width: 5px;
+    filter: drop-shadow(0 0 5px #f39c12);
+    animation: pulse 2s infinite;
+}
+.svg-circle:hover path {
+    fill: #f39c12;
+    stroke: #e67e22;
+    transform: scale(1.2);
+}
+
+
+.svg-ellipse path {
+    fill: #9b59b6;
+    stroke: #8e44ad;
+    stroke-width: 5px;
+    opacity: 0.9;
+    filter: drop-shadow(0 0 6px #8e44ad);
+}
+.svg-ellipse:hover path {
+    fill: #8e44ad;
+    opacity: 1;
+    transform: scale(1.1);
+}
+
+@keyframes pulse {
+    0% {
+        transform: scale(1);
+        opacity: 1;
+        filter: drop-shadow(0 0 2px #f39c12);
+    }
+    30% {
+        transform: scale(1.25);
+        opacity: 0.85;
+        filter: drop-shadow(0 0 12px #f1c40f);
+    }
+    60% {
+        transform: scale(0.95);
+        opacity: 0.65;
+        filter: drop-shadow(0 0 6px #e67e22);
+    }
+    100% {
+        transform: scale(1);
+        opacity: 1;
+        filter: drop-shadow(0 0 2px #f39c12);
+    }
+}
+
+
+
